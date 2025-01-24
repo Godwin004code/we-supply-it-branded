@@ -83,7 +83,7 @@ const Slider: React.FC = () => {
       </div>
         </div>
         <motion.div
-          className="image-banner"
+          className="image-banner lg:hidden object-cover"
           key={slides[currentSlide].title}
           initial={{ x: "100%", opacity: 0 }}
           animate={{ x: "0%", opacity: 1 }}

@@ -78,6 +78,15 @@
   }
   
 
+
+  @media only screen and (max-width: 1000px) {
+    
+    .text-content {
+      padding: 0px 20px;
+      
+    }
+
+  }
   @media only screen and (max-width: 640px) {
     .image-banner {
       display: none;

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Why = () => {
     return (
-        <div className='my-24 w-[90%] mx-auto'>
+        <div className='my-24 lg:w-[95%] w-[90%] mx-auto'>
             <h1 className='font-semibold sm:text-3xl text-4xl text-[#262627] text-center mb-10'>Why we are the best in the market</h1>
             <p></p>
             <div className='flex sm:flex-col gap-6 w-full'>

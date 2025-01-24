@@ -37,6 +37,7 @@ const Nav = () => {
         setMobileShown(!mobileShown);
       }
   return (
+
     <header className=" py-4">
         <div className="w-[90%] flex justify-between mx-auto">
           <Link href={"/"}>
@@ -74,7 +75,7 @@ const Nav = () => {
                 <button className="bg-[#39d8fc] h-[50px] w-[160px] font-medium text-base rounded-md">Signup</button>
                 </Link> */}
             </div>
-            <button className="hidden menu lg:block w-[50px]" onClick={toggleNav}>
+            <button className="hidden menu sm:block w-[50px]" onClick={toggleNav}>
           <img src={menu.src} className="hidden lg:block w-[50px] sm:w-[30px]" alt="mdmdmd" />
         </button>
         </div>

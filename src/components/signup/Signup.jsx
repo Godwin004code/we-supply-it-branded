@@ -56,6 +56,7 @@ const Signup = () => {
           backgroundSize: "cover",
         }}
       >
+        
         <section className="bg-[#00000080] w-full px-12 py-10 flex flex-col justify-between h-full">
           <div>
             <Link href="/">
