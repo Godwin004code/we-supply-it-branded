@@ -994,7 +994,7 @@ export default function Form({setActive}) {
       </div>
 
       {/* Password */}
-      <div className="flex items-center gap-3">
+      <div className="flex sm:flex-col items-center gap-3">
         <div className="flex flex-col gap-1 w-full">
           <label htmlFor="password " className="flex items-start">
             Password{" "}
@@ -1014,7 +1014,7 @@ export default function Form({setActive}) {
       <div className="flex gap-2">
         <input
           type="checkbox"
-          className="checkbox w-full max-w-[20px]"
+          className="checkbox w-[20px]"
           name=""
           id=""
         />

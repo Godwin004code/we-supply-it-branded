@@ -7,7 +7,7 @@ const Contact = () => {
     <div>
          <section className='flex md:flex-col justify-between w-[80%] md:w-[100%] mx-auto'>
         <div className='w-[30%] md:w-[90%] md:mx-auto md:mb-4 c'>
-                <h2 className='text-5xl mb-3'>We’re Here to Help – Contact <span className='text-[#39d8fc]'>Wesupplyitbranded</span></h2>
+                <h2 className='text-5xl sm:text-4xl mb-3'>We’re Here to Help – <br className='hidden sm:block' /> Contact <span className='text-[#39d8fc]'>Wesupplyitbranded</span></h2>
                 <p>Have a question or need assistance? Reach out to our dedicated team for support with orders, account registration, or general inquiries.</p>
 <div style={{borderTop: "1px solid #dfdfdf", borderBottom: "1px solid #dfdfdf"}} className='py-8 mt-10'>
 <div className='flex'>

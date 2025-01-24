@@ -6,7 +6,7 @@ const page = () => {
   return (
     <div>
         <Nav />
-        <div className='w-[70%] sm:mx-auto mx-auto mt-10 mb-24'>
+        <div className='w-[70%] sm:w-[90%] mx-auto mt-10 mb-24'>
             <h2 className='text-center text-xl text-[#2593AC] font-medium uppercase'>Welcome to Wesupplyitbranded</h2>
             <p className='font-normal my-1 text-base text-[#4D524F]'>Privacy Policy</p>
             <div>
