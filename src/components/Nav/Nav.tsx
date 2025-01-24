@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link"
 import Image from "next/image"
 import logo from "../../assets/Brand Guide (2).png"
@@ -9,14 +9,20 @@ import { PiMagnifyingGlassThin } from "react-icons/pi";
 import { CiHeart } from "react-icons/ci";
 import { CiShoppingCart } from "react-icons/ci";
 import { CiUser } from "react-icons/ci";
-import { useRouter } from "next/router";
+import { useRouter } from 'next/navigation'
 
 
 const Nav = () => {
+  const router = useRouter()
+  const [isActive, setActive] = useState("")
  
- 
+ console.log(router)
 
-  const isActive = window.location.pathname;
+ useEffect(() => {
+  const active = window.location.pathname;
+  setActive(active)
+ }, [])
+
     const [isDropdownVisible, setDropdownVisible] = useState(false);
     const [mobileShown, setMobileShown] = useState(false);
     const handleMouseEnter = () => {
