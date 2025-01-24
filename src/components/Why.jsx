@@ -1,10 +1,11 @@
 import React from 'react'
 import Link from "next/link"
+import { motion } from "framer-motion";
 
 const Why = () => {
     return (
         <div className='my-24 w-[90%] mx-auto'>
-            <h2 className='font-semibold sm:text-3xl text-4xl text-[#262627] text-center mb-10'>Why we are the best in the market</h2>
+            <h1 className='font-semibold sm:text-3xl text-4xl text-[#262627] text-center mb-10'>Why we are the best in the market</h1>
             <p></p>
             <div className='flex sm:flex-col gap-6 w-full'>
                 <div className='flex gap-4 flex-1 p-5 rounded-lg'>

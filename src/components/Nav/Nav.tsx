@@ -9,8 +9,14 @@ import { PiMagnifyingGlassThin } from "react-icons/pi";
 import { CiHeart } from "react-icons/ci";
 import { CiShoppingCart } from "react-icons/ci";
 import { CiUser } from "react-icons/ci";
+import { useRouter } from "next/router";
+
 
 const Nav = () => {
+ 
+ 
+
+  const isActive = window.location.pathname;
     const [isDropdownVisible, setDropdownVisible] = useState(false);
     const [mobileShown, setMobileShown] = useState(false);
     const handleMouseEnter = () => {
@@ -27,24 +33,26 @@ const Nav = () => {
   return (
     <header className=" py-4">
         <div className="w-[90%] flex justify-between mx-auto">
-            <Image src={logo} className="w-[100px]" alt="WeSupplyIt Branded" />
+          <Link href={"/"}>
+          <Image src={logo} className="w-[100px]" alt="WeSupplyIt Branded" />
+          </Link>
             <nav className="my-auto sm:hidden">
                 <ul className="flex gap-10 ">
                     <li>
-                        <Link className="text-[#676262] hover:text-[#0BA4C7]" href={"/"}>Home</Link>
+                        <Link  className={isActive === "/" ? "text-[#0BA4C7] hover:text-[#0BA4C7]" : "text-[#676262] hover:text-[#0BA4C7]"} href={"/"}>Home</Link>
                     </li>
                     <li>
-                        <Link className="text-[#676262] hover:text-[#0BA4C7]" href={"/about"}>About Us</Link>
+                        <Link className={isActive === "/about" ? "text-[#0BA4C7] hover:text-[#0BA4C7]" : "text-[#676262] hover:text-[#0BA4C7]"} href={"/about"}>About Us</Link>
                     </li>
                     <li>
-                        <Link className="text-[#676262] hover:text-[#0BA4C7]" href={"/category"}>Category</Link>
+                        <Link className={isActive === "/product" ? "text-[#0BA4C7] hover:text-[#0BA4C7]" : "text-[#676262] hover:text-[#0BA4C7]"} href={"/product"}>Shop</Link>
                     </li>
                     
                     <li>
-                        <Link className="text-[#676262] hover:text-[#0BA4C7]" href={"/blog"}>Blog</Link>
+                        <Link className={isActive === "/blog" ? "text-[#0BA4C7] hover:text-[#0BA4C7]" : "text-[#676262] hover:text-[#0BA4C7]"} href={"/blog"}>Blog</Link>
                     </li>
                     <li>
-                        <Link className="text-[#676262] hover:text-[#0BA4C7]" href={"/contact"}>Contact</Link>
+                        <Link className={isActive === "/contact" ? "text-[#0BA4C7] hover:text-[#0BA4C7]" : "text-[#676262] hover:text-[#0BA4C7]"} href={"/contact"}>Contact</Link>
                     </li>
                     
                 </ul>
@@ -100,8 +108,8 @@ const Nav = () => {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              <Link href="/services" className="font-medium flex">
-                <span className="my-auto">Category</span>{" "}
+              <Link href="/product" className="font-medium flex">
+                <span className="my-auto">Shop</span>{" "}
 
               </Link>
               {/* {isDropdownVisible && <div className='w-[76px] h-[5px] bg-[#71FF87] absolute'></div>} */}

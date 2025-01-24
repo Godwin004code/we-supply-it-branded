@@ -14,34 +14,26 @@ export default function Testimonials() {
   const testimonials = [
     {
       title: "Achieving Growth with Moshav Capital",
-      para: `Moshav Capital's services transformed our business, driving growth
-            with tailored financing, secure warehousing, and effective marketing
-            support. Highly recommended for agribusiness scaling and success.`,
-      name: "Jessica Davis",
-      profession: "Farmer",
+      para: `Wesupplyitbranded has been a game-changer for our business. The range of promotional items and the customization options are excellent. Highly recommended!`,
+      name: "Jane Doe",
+      profession: "Marketing Manager, XYZ Ltd",
       image: img,
     },
     {
       title: " Empowering my businesswith Moshav Capital",
-      para: `Moshav Capital's tailored financial solutions helped me expand my farm operations and increase productivity. Their support was instrumental in achieving sustainable growth in the agribusiness sector. `,
-      name: "Mohammed Alake",
-      profession: "Agricultural Entrepreneur",
+      para: `Their chemicals category is unmatched in quality and compliance. We’ve streamlined our procurement process thanks to their reliable service.`,
+      name: "John Smith",
+      profession: "Operations",
       image: img,
     },
     {
       title: "Transforming Agribusiness with Moshav Capital",
-      para: `Moshav Capital's services transformed our business, driving growth with tailored financing, secure warehousing, and effective marketing support. Highly recommended for agribusiness scaling and success.`,
-      name: "David Banjo",
-      profession: "Farm owner",
+      para: `The Christmas decorations were perfect for our mall’s holiday theme. The installation service was seamless!`,
+      name: "Amaka Johnson",
+      profession: "Event Manager, BigCity Malls",
       image: img,
     },
-    {
-      title: "Driving Agribusiness Success",
-      para: `With Moshav Capital's infrastructure-as-a-service solutions, we modernized our agribusiness operations and increased productivity. Their technology tools have been instrumental in streamlining processes.`,
-      name: "Aishat Ishola",
-      profession: "Agribusiness Trader",
-      image: img,
-    },
+    
   ];
 
   function moveCard(direction) {

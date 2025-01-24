@@ -60,7 +60,7 @@ const Slider: React.FC = () => {
         <div className="text-content ">
           <motion.h1
             key={slides[currentSlide].title}
-            initial={{ y: "-100%", opacity: 0 }}
+            initial={{ y: "200%", opacity: 0 }}
             animate={{ y: "0%", opacity: 1 }}
             exit={{ y: "100%", opacity: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }} className="text-[#373A38]"
@@ -69,7 +69,7 @@ const Slider: React.FC = () => {
           </motion.h1>
           <motion.p
             key={slides[currentSlide].description}
-            initial={{ y: "-100%", opacity: 0 }}
+            initial={{ y: "200%", opacity: 0 }}
             animate={{ y: "0%", opacity: 1 }}
             exit={{ y: "100%", opacity: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: .5 }}

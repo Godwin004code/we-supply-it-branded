@@ -10,6 +10,8 @@ type AccordionProps = {
   }[];
 };
 
+
+
 const Accordion: React.FC<AccordionProps> = ({ items }) => {
   const [activeItem, setActiveItem] = useState<number | null>(null);
 
@@ -18,7 +20,9 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
   };
 
   return (
-    <div className="w-full max-w-md mx-auto space-y-4">
+    <div className='w-full mb-24 sm:w-[90%] mx-auto'>
+      <h2 className='font-semibold sm:text-3xl text-4xl text-[#262627] text-center mb-10'>Frequently Asked Questions</h2>
+      <div className="w-full max-w-[70%] sm:max-w-full mx-auto space-y-4">
       {items.map((item) => (
         <div
           key={item.id}
@@ -44,6 +48,7 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
           )}
         </div>
       ))}
+    </div>
     </div>
   );
 };
