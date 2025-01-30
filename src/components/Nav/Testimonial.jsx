@@ -84,7 +84,7 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <section className="flex flex-col gap-4 py-[100px] bg-[#EBFBFF] overflow-hidden">
+    <section className="flex mt-24 flex-col gap-4 py-[100px] bg-[#EBFBFF] overflow-hidden">
       {/* Title */}
       <h2 className="text-4xl sm:text-3xl font-semibold text-center">Testimonials</h2>
 
@@ -131,7 +131,7 @@ export default function Testimonials() {
                 idx == count.current ? "block" : "hidden"
               } flex flex-col gap-3 max-w-[600px] testimonial-content`}
             >
-              <h3 className="text-3xl sm:text-xl font-semibold mb-3">{testi.title}</h3>
+              <h3 className="text-3xl hidden sm:text-xl font-semibold mb-3">{testi.title}</h3>
 
               <p className="mb-4 leading-8 sm:text-base">{testi.para}</p>
 

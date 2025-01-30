@@ -94,5 +94,8 @@
     .text-content {
       padding: 0px 20px;
     }
+    .text-content h1 {
+      font-size: 35px;
+    }
 
   }

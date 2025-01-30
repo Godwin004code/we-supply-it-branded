@@ -2,8 +2,8 @@ import React from 'react'
 
 const Newsletter = () => {
   return (
-    <div className='sm:w-[90%] mx-auto'>
-        <div className='sm:text-center mb-36'>
+    <div className='sm:w-[90%] mt-20 mx-auto'>
+        <div className='sm:text-center mb-20'>
     <h2 className='text-[#595667] text-center font-semibold text-base mb-4'>Sign up for emails</h2>
     <h2 className='text-[#3A3845] font-medium text-center text-3xl uppercase'>For news, collections & more</h2>
     <div className='flex flex-col gap-4 w-[300px] mx-auto justify-center items-center'>

@@ -3,7 +3,7 @@ import img from "../assets/pexels-pixabay-209230.jpg"
 
 const Blog = () => {
   return (
-    <div className='w-[90%] mx-auto my-36'>
+    <div className='w-[90%] mx-auto my-16'>
         <h2  className='text-center text-[#2593AC] font-medium'>BLOG</h2>
         <p className='text-4xl text-[#373A38] font-semibold text-center mt-2 mb-8'>Our Blog</p>
         <div>

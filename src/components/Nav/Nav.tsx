@@ -39,7 +39,7 @@ const Nav = () => {
   return (
 
     <header className=" py-4">
-        <div className="w-[90%] flex justify-between mx-auto">
+        <div className="w-[90%]  flex justify-between mx-auto">
           <Link href={"/"}>
           <Image src={logo} className="w-[100px]" alt="WeSupplyIt Branded" />
           </Link>
@@ -75,9 +75,11 @@ const Nav = () => {
                 <button className="bg-[#39d8fc] h-[50px] w-[160px] font-medium text-base rounded-md">Signup</button>
                 </Link> */}
             </div>
-            <button className="hidden menu sm:block w-[50px]" onClick={toggleNav}>
+            <div className="hidden  gap-2 sm:flex my-auto">  <CiShoppingCart className="w-[30px] h-[30px]"  />
+            <button className=" menu  w-[50px] sm:w-[30px]" onClick={toggleNav}>
           <img src={menu.src} className="hidden lg:block w-[50px] sm:w-[30px]" alt="mdmdmd" />
         </button>
+            </div>
         </div>
      
         {/* mobile nav */}

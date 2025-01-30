@@ -21,13 +21,13 @@ export default function Home() {
     <Announcement />
    <Nav />
    <Hero />
- <Why />
+
    <Category />
    <Products />
 
-   <ShopNow />
+
    <Testimonial />
-   <Blog />
+   
    <Newsletter />
    <Footer />
    </div>

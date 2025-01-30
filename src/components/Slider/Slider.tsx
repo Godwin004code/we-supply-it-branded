@@ -19,7 +19,7 @@ type Slide = {
 
 const slides: Slide[] = [
   {
-    title: "Explore Chemicals",
+    title: "Explore WESUPPLYITBRANDED",
     description: "Elevate your brand with our diverse range of corporate gifts, customizable items, and event giveaways.",
     image: img1,
   },
@@ -51,13 +51,16 @@ const Slider: React.FC = () => {
   const handlePrevSlide = () => {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   };
- // setTimeout(handleNextSlide, 3000)
+
+//  setTimeout(() => {
+//   handleNextSlide()
+//  }, 3000)
 
   return (
     <div className="slider-container bg-[#F9F9F9] h-[70vh]">
      
       <div className="slide">
-        <div className="text-content ">
+        <div className="text-content">
           <motion.h1
             key={slides[currentSlide].title}
             initial={{ y: "200%", opacity: 0 }}
